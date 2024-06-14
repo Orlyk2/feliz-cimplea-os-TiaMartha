@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
             border-radius: 15px;
+            max-width: 800px; /* Ajuste de ancho máximo para evitar que se extienda demasiado en pantallas grandes */
         }
         .birthday-message {
             margin-top: 20px;
@@ -83,34 +84,41 @@
             0% { transform: translateY(0); }
             100% { transform: translateY(-10px); }
         }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px; /* Reducir el padding para pantallas más pequeñas */
+            }
+            .birthday-message h1 {
+                font-size: 2em; /* Reducir el tamaño de la fuente del título */
+            }
+            .birthday-message p {
+                font-size: 1.2em; /* Reducir el tamaño de la fuente del párrafo */
+            }
+            .roses img {
+                width: 40px; /* Reducir el tamaño de las imágenes de las rosas */
+            }
+            .footer-message {
+                font-size: 1.2em; /* Reducir el tamaño del mensaje del pie de página */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="birthday-message">
-            <h1>¡Feliz Cumpleaños TIA MARTHA</h1>
-            <p>En este día tan especial, quiero que sepas cuánto te quiero y aprecio. Tu amor y dedicación han marcado una gran diferencia en mi vida, y por eso te estoy eternamente agradecido.
-                Cada recuerdo compartido contigo está lleno de cariño y felicidad. Eres una persona increíble y me siento muy afortunado de tenerte en mi vida. Espero que este día esté lleno de alegría, amor y todas las cosas maravillosas que mereces.
-                Que este nuevo año te traiga muchas bendiciones y momentos inolvidables. Gracias por ser tú y por todo lo que haces.
-                </p>
-                <div class="roses">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 1">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 2">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 3">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 4">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 5">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 6">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 7">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 8">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 9">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 10">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 11">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 12">
-                    <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 13">
-                </div>
+            <h1>¡Feliz Cumpleaños TIA MARTHA!</h1>
+            <p>En este día tan especial, quiero que sepas cuánto te quiero y aprecio. Tu amor y dedicación han marcado una gran diferencia en mi vida, y por eso te estoy eternamente agradecido. Cada recuerdo compartido contigo está lleno de cariño y felicidad. Eres una persona increíble y me siento muy afortunado de tenerte en mi vida. Espero que este día esté lleno de alegría, amor y todas las cosas maravillosas que mereces. Que este nuevo año te traiga muchas bendiciones y momentos inolvidables. Gracias por ser tú y por todo lo que haces.</p>
+            <div class="roses">
+                <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 1">
+                <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 2">
+                <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 3">
+                <img src="https://raw.githubusercontent.com/Orlyk2/feliz-cimplea-os-TiaMartha/main/3423.png" alt="Flower 4">
+            </div>
         </div>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6ZoRgCWBTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/r6ZoRgCWBTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="footer-message">
             De tu sobrino Yohan Orlando, muchas felicidades en tu día.
